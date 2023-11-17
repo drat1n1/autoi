@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>autoi</title>
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/common.css" />
+
+
 
 </head>
 <body>
@@ -21,8 +26,8 @@
                   홈
                   <ul class="submenu">
                     <li><a href="/menu/home/system.html"> 인증제도</a></li>
-                    <li><a href="/menu/home/home.html">인증부품 이용 관련 法</a></li>
-                    <li><a href="/menu/home/auth.html">대체부품 관련 영상</a></li>
+                    <li><a href="/menu/home/auth.html">인증부품 이용 관련 法</a></li>
+                    <li><a href="/menu/home/video.html">대체부품 관련 영상</a></li>
                   </ul>
                 </li>
         
@@ -60,51 +65,64 @@
        </div>
       </header>
 
-      <section class="slide">
-          <div class="slider-container">
-          
-            <!-- 좌측 버튼 -->
-            <button class="slider-btn left" onclick="moveSlider('left')">◀</button>
-            
-            <!-- 슬라이더 -->
-            <div class="slider">
-              <!-- 슬라이더 1 -->
-              <div>
-                 <p>2015년부터 시작한 국가인증대체부품제도</p>
-                 <h2>「인증부품」 이란 ?</h2>
-                 <p>대체부품을 사용할 수 있도록
-                    국가가 대체부품에 대한 인증절차와 기관을 지정해
-                    이를 보증하는 제도로서,정부가 시험기관을 지정하고,
-                    대체품이 이 기관의 성능시험을 통과하면
-                    인증표시를 붙인 후 유통합니다.</p>
+ <!-- Swiper -->
+
+ <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+ centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false"  loop="true">
+ <swiper-slide>
+
+<div class="slide1">
+    <p>2015년부터 시작한 국가인증대체부품제도</p>
+    <h2>「인증부품」 이란 ?
+    </h2>
+    <p>대체부품을 사용할 수 있도록
+      국가가 대체부품에 대한 인증절차와 기관을 지정해
+      이를 보증하는 제도로서,정부가 시험기관을 지정하고,
+      대체품이 이 기관의 성능시험을 통과하면
+      인증표시를 붙인 후 유통합니다.</p>
+</div>
+
+ </swiper-slide>
+ <swiper-slide>
+  <div class="slide2">
+  <p>순정부품과 동등한 품질을 가진 비순정부품(Non-OEM)</p>
+  <h2>「 대체부품 」 은 ?
+  </h2>
+  <p>자동차제조사 또는 수입사가 판매한
+    자동차의 부품(순정품/OEM)의 대체품을 말하며
+    성능과 품질이 순정품과 동일하거나 유사하지만
+    가격은 훨씬 저렴.</p>
+</div>
+</swiper-slide>
+ <swiper-slide>
+  <div class="slide3">
+    <p></p>
+    <h2>이용자(소비자) 혜택은 ?
+    </h2>
+    <p>검증된 품질과 합리적인 가격(순정부품 대비 약 35%~45% 저렴)으로 구입
+      보험수리 시 인증부품을 사용하면 순정부품 가격의 약 25%를 현금으로 환급</p>
+</div>
+</swiper-slide>
+
+</swiper-container>
 
 
-              </div>
-              <!-- 슬라이더 2 -->
-              <div>
-                <p>순정부품과 동등한 품질을 가진 비순정부품(Non-OEM)</p>
-                <h2>「 대체부품 」 은 ?</h2>
-                <p>자동차제조사 또는 수입사가 판매한
-                    자동차의 부품(순정품/OEM)의 대체품을 말하며
-                    성능과 품질이 순정품과 동일하거나 유사하지만
-                    가격은 훨씬 저렴.</p>
+<!-- section -->
+<section>
+<div>
+<div></div>
+  <div></div>
+
+</div>
 
 
-              </div>
-              <!-- 슬라이더 3 -->
-              <div>
-                <p></p>
-                <h2>이용자(소비자) 혜택은 ?</h2>
-                <p>검증된 품질과 합리적인 가격(순정부품 대비 약 35%~45% 저렴)으로 구입
-                    보험수리 시 인증부품을 사용하면 순정부품 가격의 약 25%를 현금으로 환급</p>
 
-              </div>
-            </div>
-            
-            <!-- 우측 버튼 -->
-            <button class="slider-btn right" onclick="moveSlider('right')">▶</button>
-          </div>
-      </section>
+
+
+</section>
+
+
+
 
 
 <footer>
@@ -176,3 +194,7 @@
 
 
 </footer>
+
+<script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
