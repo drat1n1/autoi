@@ -19,9 +19,35 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
   }
   
 
+
+  :root {
+    --m-color: #002D71;
+    --s-color: #e74c3c;
+    --p-color: #6DCAE8;
+    --g1: #D9D9D9;
+    --g2: #5B5B5B;
+    --g3: #3D3D3D;
+
+    --h1: font-weight: 700;
+          line-height: normal;
+
+
+  }
+
+
+
+
+
+
+
 .text2{
   font-weight: 600;
   font-size: 45px;
+}
+
+
+.mc{
+  color:#274B83
 }
 
 
