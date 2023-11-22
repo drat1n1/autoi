@@ -129,28 +129,37 @@ line-height: 30px;
   margin-left: 40px;
 }
 
-.direct-box, .direct-box2{
+.direct-box1, .direct-box2{
   width: 200px;
+  height: 100%; 
   align-content:center;
-  background-color: var(--m-color);
+  background-color: #002D71;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: left; 
-  height: 100%; 
   font-size: 18px;
 }
 
+.direct-box1:hover{
+background-color: #06265E;
+}
+
+
 .direct-box2{
-  border: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
   background-color: #F2F2F2;
   color:#181818;
 }
 
+.direct-box2:hover{
+  background-color: #e6e6e6;
+  }
+  
 
-.direct-box p::after {
+.direct-box1 p::after {
   content: ''; 
   display: inline-block;
   width: 0;
@@ -161,6 +170,19 @@ line-height: 30px;
   margin-left: 8px; 
   vertical-align: middle; 
 }
+
+.direct-box2 p::after {
+  content: ''; 
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent; 
+  border-bottom: 6px solid transparent; 
+  border-left: 6px solid #a8a8a8; 
+  margin-left: 8px; 
+  vertical-align: middle; 
+}
+
 
 /* section2 */
 
@@ -209,6 +231,15 @@ line-height: 30px;
   width: 33.33%;
 }
 
+
+
+.sec2-menu1:hover, .sec2-menu2:hover, .sec2-menu3:hover{
+  background: #fcfcfc;
+  border: 1px solid #9c9c9c;
+  transition: 0.5s;
+}
+
+
 .sec2-menu1, .sec2-menu2, .sec2-menu3 > div{
   padding: 30px 5px ;
 }
@@ -233,7 +264,6 @@ line-height: 30px;
 }
 
 
-
 .sec2-link::after {
   content: ''; 
   display: inline-block;
@@ -241,7 +271,7 @@ line-height: 30px;
   height: 0;
   border-top: 6px solid transparent; 
   border-bottom: 6px solid transparent; 
-  border-left: 6px solid #D9D9D9; 
+  border-left: 6px solid #ececec; 
   margin-left: 8px; 
   vertical-align: middle; 
 }
@@ -265,12 +295,35 @@ line-height: 30px;
 }
 
 .sec3-wrapper > div{
+  display: flex;
   width: 50%;
   height: 130px;
 
 }
 
 
-.sec3-wrapper > div{
-  
+.sec3-wrapper > div span:first-child{
+width: 45px;
+height: 40px;
+  background-image: url(/img/phone.svg);
+  margin-left: 30px;
+ }
+
+
+
+
+
+
+.sec3-item1{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.sec3-item2{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
