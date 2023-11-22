@@ -1,11 +1,4 @@
 
-body {
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
   /* slide */
 
 .slide{
@@ -17,8 +10,6 @@ body {
     color: white;
     text-align: left;
     margin-top: 100px;
-
-
 
 }
 
@@ -47,7 +38,6 @@ body {
   }
   
 
-
 .text-content > h2{
   margin-top: 40px;
   font-weight: 600;
@@ -65,12 +55,12 @@ line-height: 30px;
 
 
 .slide .logos img:nth-child(1){
-  width: 140px;
+  width: 160px;
   display: block;
 }
 
 .slide .logos img:nth-child(2){
-  width: 174px;
+  width: 180px;
   display: block;
   margin-bottom: 10px;
 
@@ -104,20 +94,8 @@ line-height: 30px;
 
 
 
-
-
-
-
-
-
-
 /* section1 */
 
-
-.sec1 {
-  margin-top: 50px ;
-
-}
 
 .sec1-wrapper{
   height: 110px;
@@ -137,10 +115,10 @@ line-height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center; 
-  margin-left: 50px;
-  margin-bottom: 10px;
+  margin-left: 40px;
+
 }
 
 .menu2 > div:first-child{
@@ -149,8 +127,7 @@ line-height: 30px;
   align-items: center;
   justify-content: center;
   text-align: center; 
-  margin-left: 50px;
-  margin-bottom: 10px;
+  margin-left: 40px;
 }
 
 .direct-box, .direct-box2{
@@ -174,7 +151,6 @@ line-height: 30px;
 }
 
 
-
 .direct-box p::after {
   content: ''; 
   display: inline-block;
@@ -191,21 +167,56 @@ line-height: 30px;
 
 
 .sec2-wrapper{
-  margin-top: 75px;
   text-align: center;
+}
+
+
+.sec2-wrapper > div > p:first-of-type{
+  color: #274B83;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+
+.sec2-wrapper > div > .h2{
+  display: inline;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.sec2-wrapper > div > p:last-of-type{
+  display: inline;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .sec2-menu{
   display: flex;
-  gap:20px ;
+  gap:15px ;
   height: 450px;
-  margin-top: 65px ;
+  margin-top: 55px ;
   justify-content: space-between;
 }
 
-.sec2-menu > div{
-  width: 33%;
+.sec2-menu1, .sec2-menu2, .sec2-menu3{
+  width: 33.33%;
 }
+
+.sec2-menu1, .sec2-menu2, .sec2-menu3 > div{
+  padding: 50px 5px ;
+}
+
+
+
+
 
 
 /* @media (max-width: 768px) {
@@ -218,7 +229,6 @@ line-height: 30px;
 /* section3 */
 
 .sec3-wrapper{
-  margin-top: 45px;
   display: flex;
   gap: 20px;
 

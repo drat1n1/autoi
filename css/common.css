@@ -7,6 +7,18 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
 }
 
 /* font */
+
+
+  body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -16,9 +28,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
   
   html{
     font-family: 'Pretendard-Regular';
+    font-weight: 100;
   }
   
-
 
   :root {
     --m-color: #002D71;
@@ -34,33 +46,52 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
 
   }
 
+/* spacing */
+
+  .mb-20{
+    margin-bottom: 20px ;
+  }
+
+  .mb-30{
+    margin-bottom: 30px ;
+  }
+
+  .mb-50{
+    margin-bottom: 50px ;
+  }
+
+  .mb-70{
+    margin-bottom: 70px ;
+  }
 
 
 
+/* font */
+
+.f-14{
+  font-size: 14px;}
+
+.f-20{
+  font-size: 20px;}
+
+.f-25{
+  font-size: 25px;}
 
 
 
-.text2{
-  font-weight: 600;
-  font-size: 45px;
-}
-
-
+/* color */
 .mc{
   color:#274B83
 }
 
-
 .line {
   border: 1px solid #D9D9D9; /* 테두리 스타일, 두께, 색상 */
-  
 }
 
 .container {
-  width: 1000px;
+  width: 50%;
   margin: 0 auto;
 }
-
 
 /* header */
 
@@ -80,7 +111,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
     box-shadow: 0 5px 5px -5px #DBDBDB;
   }
 
-
   .header-container{
     width: 1000px;
     height: 100%;
@@ -90,7 +120,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
     align-items: center;
   }
 
-
   .logo {
     font-size: 24px;
     font-weight: bold;
@@ -98,32 +127,55 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
 
   .menu {
     display: flex;
-    gap:50px;
+    gap:40px;
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; 
+
+  }
+
+  .menu-item {
+ 
+    position: relative;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+
+  .menu-item:hover {
+    position: relative;
+    color: #000000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 
 
-  .menu-item {
+  .menu-item:hover menu {
     position: relative;
-    color: #000;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-
   }
 
 
   .submenu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 57px;
     left: 0;
-    background-color: #f9f9f9;
+    background-color: #141414;
     padding: 10px;
-    border-radius: 5px;
+    list-style: none;
+    
   }
 
 
@@ -131,10 +183,9 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
     margin-bottom: 5px;
   }
 
-  .menu-item:hover .submenu {
+  .menu:hover .submenu {
     display: block;
   }
-
 
   
 /* sub section */
@@ -147,13 +198,13 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
 
 .bread{
   display: inline;
-  }
+}
 
-  .menu-container{
-    height: auto;
-    background: #ffffff;
-    margin-top: -50px;
-  }
+.menu-container{
+  height: auto;
+  background: #ffffff;
+  margin-top: -50px;
+}
 
 
 
@@ -161,24 +212,16 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fields
 
 
 footer{
-  height: 400px;
+  height: 300px;
   background-image: url();
   background-color: #23263F;
   color: #ffffff;
-  margin-top:40px ;
 
 }
 
-footer >div{
+
+.footer-wrapper{
   display: flex;
-}
-
-
-.footer-content1{
-  width: 395px;
-  
-}
-.footer-content2{
-  width: 535px;
-  
+  gap: 50px;
+  padding: 50px;
 }
