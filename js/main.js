@@ -1,18 +1,14 @@
-// var mySwiper = new Swiper('.mySwiper', {
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//     spaceBetween: 0,
-//     centeredSlides: true,
-//     autoplay: {
-//       delay: 5000,
-//       disableOnInteraction: true,
-//     },
-//     speed: 1000,
-//     loop: true,
-//   });
+let mainMenu = document.querySelectorAll('nav>ul>li'),
+		header = document.querySelector('header'),
+		headerHeight = header.offsetHeight;
+
+mainMenu.forEach(item=>{
+	item.addEventListener('mouseover',(e)=>{
+		let subMenuHeight = e.currentTarget.querySelector('.submenu').offsetHeight;
+		let totalHeight = headerHeight + subMenuHeight + 100;
+		header.style.height = `${totalHeight}px`;
+	});
+	item.addEventListener('mouseout',(e)=>{		
+		header.style.height = `${headerHeight}px`;
+	});
+});
