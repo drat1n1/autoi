@@ -167,6 +167,7 @@ line-height: 30px;
 
 .sec2-wrapper{
   text-align: center;
+  
 }
 
 
@@ -188,7 +189,6 @@ line-height: 30px;
   line-height: normal;
 }
 
-
 .sec2-wrapper > div > p:last-of-type{
   display: inline;
   font-size: 40px;
@@ -199,10 +199,10 @@ line-height: 30px;
 
 .sec2-menu{
   display: flex;
-  gap:15px ;
+  gap:10px ;
   height: 450px;
-  margin-top: 55px ;
   justify-content: space-between;
+
 }
 
 .sec2-menu1, .sec2-menu2, .sec2-menu3{
@@ -210,11 +210,41 @@ line-height: 30px;
 }
 
 .sec2-menu1, .sec2-menu2, .sec2-menu3 > div{
-  padding: 50px 5px ;
+  padding: 30px 5px ;
+}
+
+
+.sec2-menu p:last-child{
+  line-height: 22px; 
+  color: #555;
+}
+
+.sec2-link{
+  background-color:#072F73 ;
+  width: 192px;
+  height: 42px;
+  color: #fff;
+  padding: 10px 20px;
+
+}
+
+.sec2-link:hover{
+  background-color:#03235a ;
 }
 
 
 
+.sec2-link::after {
+  content: ''; 
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent; 
+  border-bottom: 6px solid transparent; 
+  border-left: 6px solid #D9D9D9; 
+  margin-left: 8px; 
+  vertical-align: middle; 
+}
 
 
 
@@ -223,6 +253,7 @@ line-height: 30px;
     flex-direction: column;
   }
 } */
+
 
 
 /* section3 */
@@ -239,3 +270,7 @@ line-height: 30px;
 
 }
 
+
+.sec3-wrapper > div{
+  
+}

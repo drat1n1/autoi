@@ -1,6 +1,12 @@
-let mainMenu = document.querySelectorAll('nav>ul>li'),
+let mainMenu = document.querySelectorAll('nav'),
 		header = document.querySelector('header'),
+    subMenu = document.querySelector('.submenu'),
 		headerHeight = header.offsetHeight;
+    submenuHeight = subMenu.offsetHeight;
+
+
+
+
 
 mainMenu.forEach(item=>{
 	item.addEventListener('mouseover',(e)=>{
