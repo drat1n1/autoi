@@ -132,7 +132,7 @@ line-height: 30px;
 .direct-box, .direct-box2{
   width: 200px;
   align-content:center;
-  background-color: #002D71;
+  background-color: var(--m-color);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -220,7 +220,7 @@ line-height: 30px;
 }
 
 .sec2-link{
-  background-color:#072F73 ;
+  background-color:var(--m-color);
   width: 192px;
   height: 42px;
   color: #fff;
