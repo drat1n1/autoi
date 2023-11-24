@@ -3,7 +3,7 @@
 
 
 let mainTitle = document.querySelectorAll(".menu-title li"),
-  nav = document.querySelector(".drop-menu");
+  nav = document.querySelector(".drop");
 
 for (let i of mainTitle) {
   i.addEventListener("mouseenter", () => {
@@ -54,8 +54,3 @@ const swiper = new Swiper('.swiper', {
 	  el: '.swiper-scrollbar',
 	},
   });
-
-
-
-
-

@@ -13,6 +13,22 @@
 }
 
 
+swiper-container::part(button-next) {
+  color: red;
+}
+
+swiper-container::part(bullet) {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 1;
+
+}
+
+swiper-container::part(bullet-active) {
+  background-color: red;
+}
+
 
   /* slide */
 
@@ -159,7 +175,7 @@ line-height: 30px;
 }
 
 .direct-box1:hover{
-background-color: #06265E;
+background-color: #011942;
 }
 
 
@@ -170,7 +186,7 @@ background-color: #06265E;
 }
 
 .direct-box2:hover{
-  background-color: #e6e6e6;
+  background-color: #dadada;
   }
   
 
