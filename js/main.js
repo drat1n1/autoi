@@ -1,56 +1,74 @@
+document.addEventListener("DOMContentLoaded", function () {
+  let swiper = document.querySelector(".mySwiper");
+  const params = {
+    injectStyles: [
+      `
+      .swiper-button-prev, .swiper-button-next {
+            width: 67px;
+            height: 67px;
+            background-image: url(/img/right-button.svg);
+            margin-top: 0
+        }
+        
+        .swiper-button-prev svg, .swiper-button-next svg {
+            display: none;
+        }
 
-// dropdown
+        .swiper-button-prev {
+            transform: rotate(180deg);
+            left: 15%;
+        }
 
+        .swiper-button-next {
+            right: 15%;
+        }
 
-let mainTitle = document.querySelectorAll(".menu-title li"),
-  nav = document.querySelector(".drop");
+        .swiper-pagination {
+            margin-bottom: 15px;
+        }
 
-for (let i of mainTitle) {
-  i.addEventListener("mouseenter", () => {
-    nav.classList.add("active");
-  });
-}
-nav.addEventListener("mouseleave", () => {
-  nav.classList.remove("active");
+        .swiper-pagination-bullet {
+            background-color: var(--white);
+            opacity: 0.6;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background-color: var(--point-color);
+        }
+    `,
+    ],
+  };
+
+  Object.assign(swiper, params);
+  swiper.initialize();
 });
 
-
 // 이벤트 리스너 추가
-for (let i of mainTitle) {
-	i.addEventListener("mouseenter", enterHandler);
-  }
-  
-  nav.addEventListener("mouseleave", leaveHandler);
-  
-  // 이벤트 리스너 제거
-  for (let i of mainTitle) {
-	i.removeEventListener("mouseenter", enterHandler);
-  }
-  
-  nav.removeEventListener("mouseleave", leaveHandler);
+// for (let i of mainTitle) {
+//   i.addEventListener("mouseenter", enterHandler);
+// }
 
+// nav.addEventListener("mouseleave", leaveHandler);
 
+// // 이벤트 리스너 제거
+// for (let i of mainTitle) {
+//   i.removeEventListener("mouseenter", enterHandler);
+// }
 
-// swiper
+// nav.removeEventListener("mouseleave", leaveHandler);
 
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'vertical',
-	loop: true,
-  
-	// If we need pagination
-	pagination: {
-	  el: '.swiper-pagination',
-	},
-  
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
-	},
-  
-	// And if we need scrollbar
-	scrollbar: {
-	  el: '.swiper-scrollbar',
-	},
-  });
+// var mySwiper = new Swiper(".swiper-container", {
+//   pagination: ".pagination",
+//   loop: true,
+//   autoplay: 1000,
+//   paginationClickable: true,
+// });
+// $(".swiper-container").on("mouseenter", function (e) {
+//   console.log("stop autoplay");
+//   mySwiper.stopAutoplay();
+// });
+// $(".swiper-container").on("mouseleave", function (e) {
+//   console.log("start autoplay");
+//   mySwiper.startAutoplay();
+// });
