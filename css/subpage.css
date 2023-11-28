@@ -31,7 +31,33 @@
 }
 
 .sub-title {
-  padding: 50px;
+  padding: 30px 50px 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sub-title > h4 {
+  margin-left: 20px;
+}
+
+.sub-title::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 22px;
+  background-color: #839abb;
+  flex-shrink: 0;
+  position: absolute;
+  left: calc(0% + 50px);
+}
+
+.sub-title::after {
+  border: 0;
+  height: 1px;
+  margin: 0 auto;
+  width: 950px;
+  background-color: #bababa;
 }
 
 .text-overlay {
