@@ -1,0 +1,143 @@
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  box-shadow: 0 5px 5px -5px #dbdbdb;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  width: 196px;
+  height: 55px;
+  float: left;
+  background-image: url("/img/logo2x.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+  margin-top: 0px;
+}
+
+.menu {
+  width: 580px;
+  height: 100%;
+}
+
+.menu-title {
+  display: flex;
+  height: 100%;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu-item:first-child .drop-menu::after,
+.menu-item:last-child .drop-menu::after {
+  height: 0;
+  width: 70px;
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0.9;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.menu-item:first-child .drop-menu::after {
+  left: -70px;
+  border-radius: 0 0 0 20px;
+}
+
+.menu-item:last-child .drop-menu::after {
+  right: -70px;
+  border-radius: 0 0 20px 0;
+}
+
+.drop-menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.menu-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d0d0d;
+}
+
+.drop-menu {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.menu-item a:hover {
+  /* background-color: #e6ecee; */
+  color: var(--point-color);
+}
+
+.menu:hover .drop-menu {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  opacity: 0.9;
+}
+
+.menu:hover .drop-menu::after {
+  height: 200px;
+}
+
+.menu:hover .drop-menu li {
+  font-size: var(--);
+  opacity: 1;
+  transition-delay: 0.275s;
+  pointer-events: auto;
+}
+
+.drop-menu li {
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.drop-menu li:first-child {
+  margin-top: 25px;
+}
+
+.drop-menu li a {
+  color: #d3d3d3;
+}
+
+.drop-menu li a:hover {
+  color: var(--point-color);
+}

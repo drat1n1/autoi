@@ -1,0 +1,60 @@
+/* subpage */
+
+#sub-section {
+  height: 1500px;
+}
+
+.menu-bg {
+  width: 100%;
+  height: 200px;
+  background-image: url(/img/system-bg.png);
+  background-color: #4b4e70;
+  color: #ffffff;
+  background-blend-mode: multiply;
+  margin-top: 100px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: -120px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.menu-container {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  height: 1000px;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 220px;
+  position: relative;
+}
+
+.sub-title {
+  padding: 50px;
+}
+
+.text-overlay {
+  margin-top: 50px;
+}
+
+.text-overlay h2 > span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #d9d9d9;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #333;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--point-color);
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: var(--point-color);
+}

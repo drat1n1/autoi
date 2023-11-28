@@ -1,4 +1,5 @@
-  
+/* common   */
+
 @font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -10,6 +11,7 @@
   --main-color: #002D71;
   --sub-color: #e74c3c;
   --point-color: #11B5CD;
+  --point-color2: #88A1CC;
   --hover-color: #03235a;
   --g1: #fafafa;
   --g1: #ececec;
@@ -27,22 +29,33 @@
 }
 
 
+.container{
+  width:1000px;
+  margin: 0 auto;
+}
+
+.line {
+  border: 1px solid #dddddd; /* 테두리 스타일, 두께, 색상 */
+}
+
+.sdw{
+  box-shadow : 3px 3px 8px rgba(0, 0, 0, 0.10);
+}
 
 /* font */
 
-.container{
-
-  width:1000px;
-  margin: 0 auto;
-
-}
 
   body {
+    background-color: #f5f5f5;
     font-size: 16px;
     color: #242424;
     margin: 0;
     padding: 0;
-  }
+    position: relative;
+    min-height: 100vh;
+    }
+
+  
 
   html{
     font-family: 'Pretendard-Regular';
@@ -53,284 +66,33 @@
 
 /* spacing */
 
-  section, .mySwiper {
-    margin : var(--section-margin);
-  }
 
 
-  .mb-5{
-    margin-bottom: 5px ;
-  }
+section, .mySwiper {
+  margin : var(--section-margin);
 
-  .mb-10{
-    margin-bottom: 5px ;
-  }
+}
 
-  .mb-20{
-    margin-bottom: 20px ;
-  }
-
-  .mb-30{
-    margin-bottom: 30px ;
-  }
-
-  .mb-40{
-    margin-bottom: 40px ;
-  }
-
-  .mb-50{
-    margin-bottom: 50px ;
-  }
-
-  .mb-60{
-    margin-bottom: 60px ;
-  }
 
 
 /* font */
+
+p{
+  font-size: 18px;
+}
+
+
+h3{
+  font-size: 25px;
+}
+
+h4{
+  font-size: 20px;
+}
 
 .bold{
   font-weight: 700;
 }
 
-.f-14{
-  font-size: 14px;
-}
 
-.f-16{
-  font-size: 16px;
-}
 
-.f-20{
-  font-size: 20px;}
-
-.f-25{
-  font-size: 25px;}
-
-.f-30{
-  font-size: 30px;}
-
-.f-35{
-  font-size: 35px;}
-
-
-
-
-/* header */
-
-
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100px;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
-  box-shadow: 0 5px 5px -5px #DBDBDB;
-  /* transition: 0.3s; */
-}
-
-
-.header-container{
-
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.logo a {
-  width: 196px;
-  height: 55px;
-  float: left;
-  background-image: url("/img/logo2x.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-indent: -9999em;
-  margin-top:0px;
-
-}
-
-.menu {
-  width: 580px;
-  height: 100%;
-}
-
-
-.menu-title {
-  display: flex;
-  height: 100%;
-}
-
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  text-align: center;
-  flex-grow: 1;
-
-}
-
-
-.menu-item:first-child .drop-menu::after, .menu-item:last-child .drop-menu::after {
-  height: 0;
-  width: 70px;
-  content: '';
-  background-color: black;
-  position: absolute;
-  top: 0;
-  opacity: 0.9;
-  transition: height 0.5s ease, opacity 0.5s ease;
-}
-
-.menu-item:first-child .drop-menu::after {
-  left: -70px;
-}
-
-.menu-item:last-child .drop-menu::after {
-  right: -70px;
-}
-
-
-.drop-menu {
-  width : 100%;
-  position: absolute;
-  top: 100%;
-  height: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  opacity: 0; 
-  transition: height 0.5s ease, opacity 0.5s ease; 
-}
-
-.menu-item {
-  font-size : 18px;
-  font-weight: 600;
-  color: #0d0d0d;
-}
-
-
-.drop-menu {
-  font-size : 15px;
-  font-weight: 400;
-  color: var(--main-color);
-
-}
-
-
-.menu-item:hover{
-  /* background-color: #e6ecee; */
-  color: var(--point-color);
-
-
-}
-
-.menu:hover .drop-menu {
-  display: flex;
-  flex-direction: column;
-  height: 200px; 
-  opacity: 0.9; 
- 
-}
-
-.menu:hover .drop-menu::after {
-  height: 200px;
-}
-
-
-.menu:hover .drop-menu li {
-  font-size: var(--);
-  opacity: 1;
-  transition-delay: 0.275s; 
-  pointer-events: auto;
-}
-
-
-.drop-menu li {
-  line-height: 30px;
-  display: block;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease-in-out; 
-
-}
-
-.drop-menu li:first-child{
-  margin-top: 25px;
-}
-
-
-.drop-menu li a {
-  color: #d3d3d3;
-}
-
-.drop-menu li a:hover {
-  color: var(--point-color)
-}
-
-
-
-/* footer */
-
-
-footer{
-  height: 200px;
-  background-image: url(/img/footer-img.png);
-  background-color: #23263F;
-  color: #ffffff;
-  background-blend-mode: multiply;
-  padding: 50px;
-}
-
-
-.footer-wrapper{
-  display: flex;
-}
-
-.footer-call p, .footer-kakao p{
-  display: inline-block;
-}
-
-.footer-content1{
-  width: 450px;
-}
-
-.footer-content2 p{
-  margin-top: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  color: var(--g1);
-}
-
-.footer-content2 p:last-child{
-  color: var(--g2);
-}
-
-
-
-/* subpage */
-
-.breadcrumb {
-  font-size: 14px;
-  color: #333;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  color:var(--point-color);
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline;
-  color: var(--point-color);
-}

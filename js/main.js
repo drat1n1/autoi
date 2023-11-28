@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const params = {
     injectStyles: [
       `
+
+      .swiper-button-prev svg, .swiper-button-next svg {
+        display: none;
+    }
+
       .swiper-button-prev, .swiper-button-next {
             width: 67px;
             height: 67px;
@@ -10,18 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
             margin-top: 0
         }
         
-        .swiper-button-prev svg, .swiper-button-next svg {
-            display: none;
-        }
-
         .swiper-button-prev {
             transform: rotate(180deg);
-            left: 15%;
+            left: 13%;
         }
 
         .swiper-button-next {
-            right: 15%;
+            right: 13%;
         }
+
+        .swiper-button-prev:hover, .swiper-button-next:hover{
+            background-image: url(/img/hover-arrow.svg);
+        }
+
 
         .swiper-pagination {
             margin-bottom: 15px;
@@ -57,18 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 // nav.removeEventListener("mouseleave", leaveHandler);
-
-// var mySwiper = new Swiper(".swiper-container", {
-//   pagination: ".pagination",
-//   loop: true,
-//   autoplay: 1000,
-//   paginationClickable: true,
-// });
-// $(".swiper-container").on("mouseenter", function (e) {
-//   console.log("stop autoplay");
-//   mySwiper.stopAutoplay();
-// });
-// $(".swiper-container").on("mouseleave", function (e) {
-//   console.log("start autoplay");
-//   mySwiper.startAutoplay();
-// });
