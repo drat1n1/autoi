@@ -16,60 +16,62 @@
   --g1: #fafafa;
   --g1: #ececec;
   --g2: #D9D9D9;
-  --g3: #5B5B5B;
-  --g4: #3D3D3D;
+  --g3: #7A7A7A;
+  --g4: #5B5B5B;
+  --g5: #3D3D3D;
   --black: #242424;
   --white: #fff;
 
   --h1: font-weight: 700;
-        line-height: normal;
+  line-height: normal;
 
   --section-margin: 0 0 70px;
 
 }
 
 
-.container{
-  width:1000px;
+.container {
+  width: 1000px;
   margin: 0 auto;
 }
 
 .line {
-  border: 1px solid #dddddd; /* 테두리 스타일, 두께, 색상 */
+  border: 1px solid #dddddd;
 }
 
-.sdw{
-  box-shadow : 3px 3px 8px rgba(0, 0, 0, 0.10);
+.sdw {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.10);
 }
 
 /* font */
 
 
-  body {
-    background-color: #f5f5f5;
-    font-size: 16px;
-    color: #242424;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-    }
+body {
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #242424;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
 
-  
 
-  html{
-    font-family: 'Pretendard-Regular';
-    font-weight: 100;
-  }
-  
+
+html {
+  font-family: 'Pretendard-Regular';
+  font-weight: 100;
+}
+
 
 
 /* spacing */
 
 
 
-section, .mySwiper {
-  margin : var(--section-margin);
+section,
+.mySwiper {
+  margin: var(--section-margin);
 
 }
 
@@ -77,22 +79,18 @@ section, .mySwiper {
 
 /* font */
 
-p{
+p {
   font-size: 18px;
 }
 
-
-h3{
+h3 {
   font-size: 25px;
 }
 
-h4{
+h4 {
   font-size: 20px;
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
-
-
-

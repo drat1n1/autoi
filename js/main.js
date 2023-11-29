@@ -49,17 +49,3 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.assign(swiper, params);
   swiper.initialize();
 });
-
-// 이벤트 리스너 추가
-// for (let i of mainTitle) {
-//   i.addEventListener("mouseenter", enterHandler);
-// }
-
-// nav.addEventListener("mouseleave", leaveHandler);
-
-// // 이벤트 리스너 제거
-// for (let i of mainTitle) {
-//   i.removeEventListener("mouseenter", enterHandler);
-// }
-
-// nav.removeEventListener("mouseleave", leaveHandler);

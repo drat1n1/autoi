@@ -1,0 +1,25 @@
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+.video-wrap {
+    margin-top: 50px;
+}
+
+.video-wrap2 {
+    display: flex;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+}
+
+.video>p {
+    margin: 10px 0;
+
+}
