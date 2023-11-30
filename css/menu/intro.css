@@ -11,9 +11,8 @@
     left: 0%;
 }
 
-
-#intro {
-    background-color: var(--g3);
+.bg-g {
+    background-color: var(--g1);
 }
 
 .intro-logo {
@@ -35,8 +34,6 @@
 
 .intro-wrap {
     padding: 30px 70px 0 70px;
-
-
 }
 
 .intro-wrap>h3>span {
@@ -63,10 +60,20 @@
 }
 
 
-.intro-box {
+.box-wrap {
     display: flex;
+    margin-bottom: 30px;
+}
+
+
+.intro-box {
     padding: 30px;
     margin-bottom: 60PX;
+}
+
+.intro-box>p {
+    display: inline-block;
+    font-size: 20px;
 }
 
 .left {
@@ -76,7 +83,6 @@
     border-right: solid 1px var(--g3);
 }
 
-
 .left h4 {
     line-height: 27px;
 }
@@ -85,17 +91,22 @@
     color: var(--g3);
 }
 
-.right:last-of-type p {
+.right p {
     width: 400px;
     font-size: 15px;
 }
+
+.ildong p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 
 .picture {
     text-align: center;
     margin-bottom: 100px;
 }
-
-
 
 
 .logos {

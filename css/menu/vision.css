@@ -1,0 +1,7 @@
+.content-img {
+    width: 900px;
+    height: 1900px;
+    background-image: url(/img/vision.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}

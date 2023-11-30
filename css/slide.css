@@ -14,9 +14,11 @@
 .slide1 {
   background-image: url("/img/slide1.png");
 }
+
 .slide2 {
   background-image: url("/img/slide2.png");
 }
+
 .slide3 {
   background-image: url("/img/slide3.png");
 }
@@ -34,7 +36,7 @@
   line-height: 30px;
 }
 
-.text-content > h2 {
+.text-content>h2 {
   margin-top: 40px;
   font-weight: 600;
   font-size: 50px;

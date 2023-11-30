@@ -1,0 +1,16 @@
+.history {
+    display: flex;
+}
+
+
+.history p:first-of-type {
+    font-size: 40px;
+}
+
+.content-img {
+    width: 900px;
+    height: 1400px;
+    background-image: url(/img/business.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}

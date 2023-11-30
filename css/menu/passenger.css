@@ -1,0 +1,7 @@
+.content-img {
+    width: 900px;
+    height: 1600px;
+    background-image: url(/img/seong.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
