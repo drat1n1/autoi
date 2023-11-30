@@ -49,3 +49,26 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.assign(swiper, params);
   swiper.initialize();
 });
+
+// map
+
+document.addEventListener("DOMContentLoaded", function () {
+  let tabMenu = document.querySelectorAll(".tab-menu li");
+  let tabContent = document.querySelectorAll(".tab-content > div");
+
+  tabMenu[0].classList.add("active");
+  tabContent.forEach((content) => (content.style.display = "none"));
+  tabContent[0].style.display = "block";
+
+  tabMenu.forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      tabMenu.forEach((menu) => menu.classList.remove("active"));
+      e.currentTarget.classList.add("active");
+
+      tabContent.forEach((content) => (content.style.display = "none"));
+      tabContent[index].style.display = "block";
+    });
+  });
+});
