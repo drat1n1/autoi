@@ -1,7 +1,3 @@
-.content-img {
-    width: 900px;
-    height: 800px;
-    background-image: url(/img/sang.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.sang-img {
+    padding: 60px;
 }

@@ -1,7 +1,3 @@
-.content-img {
-    width: 900px;
-    height: 800px;
-    background-image: url(/img/tunning.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.tunning-img {
+    padding: 60px;
 }
