@@ -108,6 +108,17 @@
     margin-bottom: 100px;
 }
 
+.picture img {
+    width: 200px;
+    image-rendering: -moz-crisp-edges;
+    /* firefox */
+    image-rendering: -o-crisp-edges;
+    /* opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* chrome(비표준) */
+    image-rendering: crisp-edges;
+}
+
 
 .logos {
     padding-bottom: 100px;
