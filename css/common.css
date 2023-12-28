@@ -32,7 +32,7 @@
 }
 
 .container {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -48,6 +48,7 @@
 
 
 body {
+  width: 100%;
   background-color: #f5f5f5;
   font-size: 16px;
   color: #242424;
