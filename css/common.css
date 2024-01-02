@@ -26,13 +26,11 @@
   line-height: normal;
 
   --section-margin: 0 0 70px;
-
-
-
 }
 
 .container {
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -95,4 +93,57 @@ p {
 
 .bold {
   font-weight: 700;
+}
+
+
+
+
+@media (max-width: 700px) {
+
+  .container {
+    width: 90%
+  }
+
+
+  .header-container {
+
+    flex-direction: column;
+  }
+
+  .sec1-wrapper {
+    min-height: 200px;
+    flex-direction: column;
+
+  }
+
+  .sec2-menu {
+    flex-direction: column;
+    width: 90%;
+  }
+
+
+  .sc2-wrap {
+    display: flex;
+    flex-direction: column;
+
+
+    img {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+
+  .sc3-wrapper {
+
+    flex-direction: column;
+  }
+
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
